@@ -12,7 +12,7 @@ export const authService = {
   },
 
   async register(userData) {
-    const response = await api.post('/register', userData);
+    const response = await api.post('/users', userData);
     return response.data;
   },
 
