@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://api-vitor-fregulia-0a4f8e09417c.herokuapp.com/';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://api-vitor-fregulia-0a4f8e09417c.herokuapp.com/api/';
 
 // Configuração do Axios
 const api = axios.create({
