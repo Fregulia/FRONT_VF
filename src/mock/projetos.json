@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "titulo": "Sistema de Biblioteca",
+    "ano": 2023,
+    "descricao": "Aplicação para gerenciamento de empréstimos."
+  },
+  {
+    "id": 2,
+    "titulo": "Portfólio Pessoal",
+    "ano": 2024,
+    "descricao": "Portfólio online com React."
+  },
+  {
+    "id": 3,
+    "titulo": "E-commerce Simples",
+    "ano": 2023,
+    "descricao": "Loja virtual com frontend mockado."
+  }
+]

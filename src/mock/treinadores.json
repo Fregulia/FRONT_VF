@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "nome": "Carlos Pereira",
+    "cref": "CREF-123-456",
+    "especialidade": "Preparação Física",
+    "esporte": {
+      "id": 1,
+      "nome": "Futebol",
+      "federacao": "CBF"
+    },
+    "atletas": [
+      {
+        "id": 1,
+        "nome": "João Silva",
+        "idade": 25,
+        "categoria": "Profissional"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "Ana Costa",
+    "cref": "CREF-789-012",
+    "especialidade": "Técnico",
+    "esporte": {
+      "id": 2,
+      "nome": "Basquete",
+      "federacao": "CBB"
+    },
+    "atletas": [
+      {
+        "id": 2,
+        "nome": "Maria Santos",
+        "idade": 22,
+        "categoria": "Juvenil"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nome": "Roberto Lima",
+    "cref": "CREF-345-678",
+    "especialidade": "Fisioterapia",
+    "esporte": {
+      "id": 3,
+      "nome": "Vôlei",
+      "federacao": "CBV"
+    },
+    "atletas": []
+  }
+]

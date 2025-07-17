@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "nome": "Futebol",
+    "federacao": "CBF",
+    "descricao": "Esporte mais popular do Brasil",
+    "atletas": [
+      {
+        "id": 1,
+        "nome": "João Silva",
+        "idade": 25,
+        "categoria": "Profissional"
+      }
+    ],
+    "treinadores": [
+      {
+        "id": 1,
+        "nome": "Carlos Pereira",
+        "cref": "CREF-123-456",
+        "especialidade": "Preparação Física"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "Basquete",
+    "federacao": "CBB",
+    "descricao": "Esporte de quadra muito popular",
+    "atletas": [
+      {
+        "id": 2,
+        "nome": "Maria Santos",
+        "idade": 22,
+        "categoria": "Juvenil"
+      }
+    ],
+    "treinadores": [
+      {
+        "id": 2,
+        "nome": "Ana Costa",
+        "cref": "CREF-789-012",
+        "especialidade": "Técnico"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nome": "Vôlei",
+    "federacao": "CBV",
+    "descricao": "Esporte olímpico brasileiro",
+    "atletas": [],
+    "treinadores": []
+  }
+]
