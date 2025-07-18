@@ -38,13 +38,16 @@ export const AuthProvider = ({ children }) => {
 
   const register = async (userData) => {
     try {
-      await authService.register(userData);
-      return { success: true };
+      const response = await authService.register(userData);
+      
+      // Se o registro retornar um usuário e token, atualiza o estado
+      if (response.user && response.access_token) {
+        setUser(response.user);
+      }
+      
+      return response;
     } catch (error) {
-      return { 
-        success: false, 
-        error: error.response?.data?.message || 'Erro no registro' 
-      };
+      throw error;
     }
   };
 

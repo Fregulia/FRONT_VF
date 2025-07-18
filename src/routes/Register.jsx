@@ -33,12 +33,18 @@ const Register = () => {
       return;
     }
 
-    const result = await register(formData);
-    
-    if (result.success) {
-      navigate('/login');
-    } else {
-      setError(result.error);
+    try {
+      const result = await register(formData);
+      
+      if (result.access_token) {
+        // Se o registro retornou um token, o usuário já está logado
+        navigate('/');
+      } else {
+        // Caso contrário, redireciona para o login
+        navigate('/login');
+      }
+    } catch (error) {
+      setError(error.response?.data?.message || 'Erro ao registrar. Tente novamente.');
       setLoading(false);
     }
   };

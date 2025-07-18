@@ -12,7 +12,15 @@ export const authService = {
   },
 
   async register(userData) {
-    const response = await api.post('/users', userData);
+    const response = await api.post('/register', userData);
+    const { access_token, user } = response.data;
+    
+    // Armazena o token e usuário se o registro retornar esses dados
+    if (access_token) {
+      localStorage.setItem('token', access_token);
+      localStorage.setItem('user', JSON.stringify(user));
+    }
+    
     return response.data;
   },
 
