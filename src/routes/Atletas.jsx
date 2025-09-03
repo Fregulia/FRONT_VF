@@ -141,6 +141,7 @@ const Atletas = () => {
           {hasRole(['admin', 'manager']) && (
             <button
               onClick={() => setShowForm(!showForm)}
+              className="btn-hover-scale success"
               style={{
                 padding: '0.5rem 1rem',
                 backgroundColor: '#28a745',
@@ -169,7 +170,7 @@ const Atletas = () => {
       )}
 
       {showForm && (
-        <div style={{
+        <div className="slide-in" style={{
           backgroundColor: '#f8f9fa',
           padding: '1.5rem',
           borderRadius: '8px',
@@ -185,6 +186,7 @@ const Atletas = () => {
                   value={formData.nome}
                   onChange={(e) => setFormData({...formData, nome: e.target.value})}
                   required
+                  className="input-transition"
                   style={{
                     width: '100%',
                     padding: '0.5rem',

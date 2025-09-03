@@ -99,6 +99,7 @@ const Esportes = () => {
           {hasRole(['admin']) && (
             <button
               onClick={() => setShowForm(!showForm)}
+              className="btn-hover-scale"
               style={{
                 padding: '0.5rem 1rem',
                 backgroundColor: '#007bff',
@@ -127,7 +128,7 @@ const Esportes = () => {
       )}
 
       {showForm && (
-        <div style={{
+        <div className="slide-in" style={{
           backgroundColor: '#f8f9fa',
           padding: '1.5rem',
           borderRadius: '8px',
@@ -202,7 +203,7 @@ const Esportes = () => {
         gap: '1.5rem' 
       }}>
         {esportes.map(esporte => (
-          <div key={esporte.id} style={{
+          <div key={esporte.id} className="fade-in" style={{
             border: '1px solid #ddd',
             borderRadius: '8px',
             padding: '1.5rem',

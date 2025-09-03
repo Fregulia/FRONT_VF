@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
+import './transitions.css';
 import Layout from './routes/Layout';
 import Login from './routes/Login';
 import Register from './routes/Register';

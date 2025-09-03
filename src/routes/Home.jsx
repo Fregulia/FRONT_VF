@@ -9,7 +9,7 @@ const Home = () => {
       <h1>Sistema de Gerenciamento Esportivo</h1>
       
       {isAuthenticated() && (
-        <div style={{
+        <div className="pulse-effect" style={{
           backgroundColor: '#d4edda',
           color: '#155724',
           padding: '1rem',
@@ -33,7 +33,7 @@ const Home = () => {
         gap: '2rem',
         marginTop: '2rem'
       }}>
-        <div style={{
+        <div className="fade-in" style={{
           border: '1px solid #ddd',
           borderRadius: '8px',
           padding: '1.5rem',
@@ -43,6 +43,7 @@ const Home = () => {
           <p>Gerencie os diferentes esportes disponíveis no sistema.</p>
           <Link 
             to="/esportes" 
+            className="btn-hover-scale"
             style={{
               display: 'inline-block',
               padding: '0.5rem 1rem',
@@ -57,16 +58,18 @@ const Home = () => {
           </Link>
         </div>
 
-        <div style={{
+        <div className="fade-in" style={{
           border: '1px solid #ddd',
           borderRadius: '8px',
           padding: '1.5rem',
-          backgroundColor: '#f8f9fa'
+          backgroundColor: '#f8f9fa',
+          animationDelay: '0.2s'
         }}>
-          <h3>🏃‍♂️ Atletas</h3>
+          <h3>🏃♂️ Atletas</h3>
           <p>Cadastre e gerencie atletas, suas categorias e relacionamentos.</p>
           <Link 
             to="/atletas" 
+            className="btn-hover-scale success"
             style={{
               display: 'inline-block',
               padding: '0.5rem 1rem',
@@ -81,16 +84,18 @@ const Home = () => {
           </Link>
         </div>
 
-        <div style={{
+        <div className="fade-in" style={{
           border: '1px solid #ddd',
           borderRadius: '8px',
           padding: '1.5rem',
-          backgroundColor: '#f8f9fa'
+          backgroundColor: '#f8f9fa',
+          animationDelay: '0.4s'
         }}>
-          <h3>👨‍🏫 Treinadores</h3>
+          <h3>👨🏫 Treinadores</h3>
           <p>Gerencie treinadores, suas especialidades e certificações.</p>
           <Link 
             to="/treinadores" 
+            className="btn-hover-scale warning"
             style={{
               display: 'inline-block',
               padding: '0.5rem 1rem',
@@ -116,8 +121,8 @@ const Home = () => {
         }}>
           <p>
             Para acessar todas as funcionalidades do sistema, faça{' '}
-            <Link to="/login" style={{ color: '#007bff' }}>login</Link> ou{' '}
-            <Link to="/registro" style={{ color: '#007bff' }}>registre-se</Link>.
+            <Link to="/login" className="btn-hover-scale" style={{ color: '#007bff' }}>login</Link> ou{' '}
+            <Link to="/registro" className="btn-hover-scale" style={{ color: '#007bff' }}>registre-se</Link>.
           </p>
         </div>
       )}

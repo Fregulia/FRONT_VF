@@ -44,7 +44,7 @@ const Login = () => {
       justifyContent: 'center',
       backgroundColor: '#f8f9fa'
     }}>
-      <div style={{
+      <div className="fade-in" style={{
         backgroundColor: 'white',
         padding: '2rem',
         borderRadius: '8px',
@@ -77,6 +77,7 @@ const Login = () => {
               value={formData.email}
               onChange={handleChange}
               required
+              className="input-transition"
               style={{
                 width: '100%',
                 padding: '0.75rem',
@@ -97,6 +98,7 @@ const Login = () => {
               value={formData.password}
               onChange={handleChange}
               required
+              className="input-transition"
               style={{
                 width: '100%',
                 padding: '0.75rem',
@@ -110,6 +112,7 @@ const Login = () => {
           <button
             type="submit"
             disabled={loading}
+            className="btn-hover-scale"
             style={{
               width: '100%',
               padding: '0.75rem',
